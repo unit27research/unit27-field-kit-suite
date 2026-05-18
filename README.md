@@ -1,4 +1,4 @@
-# Unit27 Field Kit Suite
+# U27-FKS01 // Field Kit Suite
 
 [![CI](https://github.com/unit27research/unit27-field-kit-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/unit27research/unit27-field-kit-suite/actions/workflows/ci.yml)
 
@@ -9,11 +9,13 @@ Unit27 Field Kit Suite orients users to the Unit27 open tooling channel.
 It does not replace the field kits. It shows how to use them together.
 
 ```text
+U27-FKS01
 UNIT27 FIELD KIT SUITE
 
 CLASS: SUITE
+OPERATING_POSITION: INDEX
 FUNCTION: Public Orientation + Operating Sequence Guide
-REF_ID: FIELD-KIT-SUITE-01
+REF_ID: U27-FKS01-FIELD-KIT-SUITE
 ```
 
 ## Release Status
@@ -61,15 +63,29 @@ git clone https://github.com/unit27research/u27-check
 
 ## Field Kits
 
-| Repository | System Class | Role |
-|---|---:|---|
-| [`unit27-stack-engine`](https://github.com/unit27research/unit27-stack-engine) | `U27-S02` | Turns ambiguous operational goals into scored AI workflow architectures. |
-| [`unit27-context-engine`](https://github.com/unit27research/unit27-context-engine) | `U27-S03` | Converts repositories into governed, token-aware context packages. |
-| [`unit27-handoff-engine`](https://github.com/unit27research/unit27-handoff-engine) | `U27-S04` | Converts objectives and context into agent-ready work packets. |
-| [`unit27-eval-bench`](https://github.com/unit27research/unit27-eval-bench) | `U27-S05` | Runs deterministic eval cases before proof recording. |
-| [`unit27-proof-ledger`](https://github.com/unit27research/unit27-proof-ledger) | `U27-S06` | Records durable proof artifacts from evals, demos, and test runs. |
-| [`unit27-boundary-engine`](https://github.com/unit27research/unit27-boundary-engine) | `U27-S07` | Checks public claims against recorded proof. |
-| [`u27-check`](https://github.com/unit27research/u27-check) | `U27-C01` | Runs deterministic pre-launch checks against the first user path. |
+| Repository | System Class | Operating Position | Ref ID | Role |
+|---|---:|---:|---|---|
+| [`unit27-stack-engine`](https://github.com/unit27research/unit27-stack-engine) | `U27-S02` | `01/07` | `U27-S02-STACK-ENGINE` | Turns ambiguous operational goals into scored AI workflow architectures. |
+| [`unit27-context-engine`](https://github.com/unit27research/unit27-context-engine) | `U27-S03` | `02/07` | `U27-S03-CONTEXT-ENGINE` | Converts repositories into governed, token-aware context packages. |
+| [`unit27-handoff-engine`](https://github.com/unit27research/unit27-handoff-engine) | `U27-S04` | `03/07` | `U27-S04-HANDOFF-ENGINE` | Converts objectives and context into agent-ready work packets. |
+| [`unit27-eval-bench`](https://github.com/unit27research/unit27-eval-bench) | `U27-S05` | `04/07` | `U27-S05-EVAL-BENCH` | Runs deterministic eval cases before proof recording. |
+| [`unit27-proof-ledger`](https://github.com/unit27research/unit27-proof-ledger) | `U27-S06` | `05/07` | `U27-S06-PROOF-LEDGER` | Records durable proof artifacts from evals, demos, and test runs. |
+| [`unit27-boundary-engine`](https://github.com/unit27research/unit27-boundary-engine) | `U27-S07` | `06/07` | `U27-S07-BOUNDARY-ENGINE` | Checks public claims against recorded proof. |
+| [`u27-check`](https://github.com/unit27research/u27-check) | `U27-C01` | `07/07` | `U27-C01-CHECK` | Runs deterministic pre-launch checks against the first user path. |
+
+## Numbering Doctrine
+
+Unit27 uses structural class numbers and operating positions separately.
+
+```text
+U27-S## = structural system class
+U27-C## = check / gate class
+U27-FKS## = field kit suite class
+OPERATING_POSITION = order inside the public field-kit chain
+REF_ID = stable public package identifier tied to the structural class
+```
+
+That distinction is intentional. `Stack Engine` is `U27-S02` because the class belongs to the broader Unit27 system registry. It is still `OPERATING_POSITION: 01/07` inside the public field-kit chain.
 
 ## First Use Path
 

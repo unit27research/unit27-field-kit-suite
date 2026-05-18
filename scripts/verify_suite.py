@@ -20,6 +20,10 @@ REQUIRED_TERMS = [
     "unit27-proof-ledger",
     "unit27-boundary-engine",
     "u27-check",
+    "U27-FKS01",
+    "U27-S02-STACK-ENGINE",
+    "OPERATING_POSITION",
+    "Numbering Doctrine",
     "Stack Engine -> Context Engine -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check",
 ]
 
