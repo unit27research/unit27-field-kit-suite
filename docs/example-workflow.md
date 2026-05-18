@@ -2,11 +2,11 @@
 
 `PUBLIC_RELEASE_INDEX // FIELD_KIT_SUITE`
 
-This example shows the public operating sequence. It is intentionally small: one repo, one objective, one chain.
+This example shows the Unit27 public operating sequence. It is intentionally small: one repo, one objective, one chain.
 
 ## Scenario
 
-A repository is about to be shared publicly. The owner wants an AI agent to improve the README, but the work needs to stay bounded and the final public claims need proof.
+A repository is about to be shared publicly. The owner wants an AI agent to improve the README, but the work needs to stay bounded and the final public claims need recorded proof.
 
 ## Sequence
 

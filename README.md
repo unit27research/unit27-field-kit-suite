@@ -4,12 +4,12 @@
 
 `PUBLIC_RELEASE_INDEX // FIELD_KIT_SUITE`
 
-Unit27 Field Kit Suite is the public binder for the Unit27 open tooling channel.
+Unit27 Field Kit Suite orients users to the Unit27 open tooling channel.
 
 It does not replace the field kits. It shows how to use them together.
 
 ```text
-FIELD KIT SUITE
+UNIT27 FIELD KIT SUITE
 
 CLASS: SUITE
 FUNCTION: Public Orientation + Operating Sequence Guide
@@ -21,7 +21,7 @@ REF_ID: FIELD-KIT-SUITE-01
 `SOURCE_STATUS: PUBLIC_PACKAGE`
 `ACCESS_STATUS: CLEARED_FOR_EXTERNAL_USE`
 
-This repository is a released Unit27 orientation package: visible, inspectable, and intended for practical use. Controlled protocol materials remain outside this source package.
+This repository is a released Unit27 field kit suite: visible, inspectable, and intended for orientation, testing, and practical use. Controlled protocol materials remain outside this source package.
 
 It answers one narrow question:
 
@@ -45,7 +45,7 @@ The short version:
 6. Contain the public claim.
 7. Check the launch surface.
 
-## Clone The Suite
+## Clone The Field Kits
 
 The current public packages are GitHub-first. Clone the repos and install each field kit from its own README.
 
@@ -89,7 +89,7 @@ Start with one project and move only as far as the work needs.
 
 See [docs/example-workflow.md](docs/example-workflow.md) for a complete public-chain example.
 
-## What This Is Not
+## What It Does Not Do
 
 Field Kit Suite does not:
 
