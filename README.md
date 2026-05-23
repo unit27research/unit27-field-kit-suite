@@ -34,18 +34,19 @@ It answers one narrow question:
 Use the operating sequence, not the release dates:
 
 ```text
-Stack Engine -> Context Engine -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check
+Stack Engine -> Context Engine -> Knowledge Readiness -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check
 ```
 
 The short version:
 
 1. Shape the work.
 2. Package the context.
-3. Write the handoff.
-4. Run the evals.
-5. Record the proof.
-6. Contain the public claim.
-7. Check the launch surface.
+3. Classify what the context is allowed to become.
+4. Write the handoff.
+5. Run the evals.
+6. Record the proof.
+7. Contain the public claim.
+8. Check the launch surface.
 
 ## Clone The Field Kits
 
@@ -54,6 +55,7 @@ The current public packages are GitHub-first. Clone the repos and install each f
 ```bash
 git clone https://github.com/unit27research/unit27-stack-engine
 git clone https://github.com/unit27research/unit27-context-engine
+git clone https://github.com/unit27research/unit27-knowledge-readiness
 git clone https://github.com/unit27research/unit27-handoff-engine
 git clone https://github.com/unit27research/unit27-eval-bench
 git clone https://github.com/unit27research/unit27-proof-ledger
@@ -65,13 +67,14 @@ git clone https://github.com/unit27research/u27-check
 
 | Repository | System Class | Operating Position | Ref ID | Role |
 |---|---:|---:|---|---|
-| [`unit27-stack-engine`](https://github.com/unit27research/unit27-stack-engine) | `U27-S02` | `01/07` | `U27-S02-STACK-ENGINE` | Turns ambiguous operational goals into scored AI workflow architectures. |
-| [`unit27-context-engine`](https://github.com/unit27research/unit27-context-engine) | `U27-S03` | `02/07` | `U27-S03-CONTEXT-ENGINE` | Converts repositories into governed, token-aware context packages. |
-| [`unit27-handoff-engine`](https://github.com/unit27research/unit27-handoff-engine) | `U27-S04` | `03/07` | `U27-S04-HANDOFF-ENGINE` | Converts objectives and context into agent-ready work packets. |
-| [`unit27-eval-bench`](https://github.com/unit27research/unit27-eval-bench) | `U27-S05` | `04/07` | `U27-S05-EVAL-BENCH` | Runs deterministic eval cases before proof recording. |
-| [`unit27-proof-ledger`](https://github.com/unit27research/unit27-proof-ledger) | `U27-S06` | `05/07` | `U27-S06-PROOF-LEDGER` | Records durable proof artifacts from evals, demos, and test runs. |
-| [`unit27-boundary-engine`](https://github.com/unit27research/unit27-boundary-engine) | `U27-S07` | `06/07` | `U27-S07-BOUNDARY-ENGINE` | Checks public claims against recorded proof. |
-| [`u27-check`](https://github.com/unit27research/u27-check) | `U27-C01` | `07/07` | `U27-C01-CHECK` | Runs deterministic pre-launch checks against the first user path. |
+| [`unit27-stack-engine`](https://github.com/unit27research/unit27-stack-engine) | `U27-S02` | `01/08` | `U27-S02-STACK-ENGINE` | Turns ambiguous operational goals into scored AI workflow architectures. |
+| [`unit27-context-engine`](https://github.com/unit27research/unit27-context-engine) | `U27-S03` | `02/08` | `U27-S03-CONTEXT-ENGINE` | Converts repositories into governed, token-aware context packages. |
+| [`unit27-knowledge-readiness`](https://github.com/unit27research/unit27-knowledge-readiness) | `U27-S08` | `03/08` | `U27-S08-KNOWLEDGE-READINESS` | Classifies internal knowledge before it becomes memory, onboarding, automation context, handoff material, or public proof. |
+| [`unit27-handoff-engine`](https://github.com/unit27research/unit27-handoff-engine) | `U27-S04` | `04/08` | `U27-S04-HANDOFF-ENGINE` | Converts objectives and approved context into agent-ready work packets. |
+| [`unit27-eval-bench`](https://github.com/unit27research/unit27-eval-bench) | `U27-S05` | `05/08` | `U27-S05-EVAL-BENCH` | Runs deterministic eval cases before proof recording. |
+| [`unit27-proof-ledger`](https://github.com/unit27research/unit27-proof-ledger) | `U27-S06` | `06/08` | `U27-S06-PROOF-LEDGER` | Records durable proof artifacts from evals, demos, and test runs. |
+| [`unit27-boundary-engine`](https://github.com/unit27research/unit27-boundary-engine) | `U27-S07` | `07/08` | `U27-S07-BOUNDARY-ENGINE` | Checks public claims against recorded proof. |
+| [`u27-check`](https://github.com/unit27research/u27-check) | `U27-C01` | `08/08` | `U27-C01-CHECK` | Runs deterministic pre-launch checks against the first user path. |
 
 ## Numbering Doctrine
 
@@ -85,7 +88,7 @@ OPERATING_POSITION = order inside the public field-kit chain
 REF_ID = stable public package identifier tied to the structural class
 ```
 
-That distinction is intentional. `Stack Engine` is `U27-S02` because the class belongs to the broader Unit27 system registry. It is still `OPERATING_POSITION: 01/07` inside the public field-kit chain.
+That distinction is intentional. `Stack Engine` is `U27-S02` because the class belongs to the broader Unit27 system registry. It is still `OPERATING_POSITION: 01/08` inside the public field-kit chain.
 
 ## First Use Path
 
@@ -94,11 +97,12 @@ Start with one project and move only as far as the work needs.
 ```text
 1. If the project shape is unclear, use Stack Engine.
 2. If repository context is too loose, use Context Engine.
-3. If an agent needs bounded work, use Handoff Engine.
-4. If checks need executable results, use Eval Bench.
-5. If evidence needs to survive, use Proof Ledger.
-6. If public claims need discipline, use Boundary Engine.
-7. If a demo or launch surface is about to be shared, use u27-check.
+3. If prepared context may be stale, disputed, restricted, role-specific, or unsafe for action, use Knowledge Readiness.
+4. If an agent needs bounded work, use Handoff Engine.
+5. If checks need executable results, use Eval Bench.
+6. If evidence needs to survive, use Proof Ledger.
+7. If public claims need discipline, use Boundary Engine.
+8. If a demo or launch surface is about to be shared, use u27-check.
 ```
 
 ## Example Workflow

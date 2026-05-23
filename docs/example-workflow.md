@@ -34,7 +34,23 @@ context_manifest.md
 context_report.json
 ```
 
-### 3. Write The Handoff
+### 3. Classify Knowledge Readiness
+
+Use Knowledge Readiness when prepared context may be stale, disputed, restricted, role-specific, or unsafe for action.
+
+```bash
+knowledge-readiness audit examples/sample-project/knowledge_items.json --root .
+```
+
+Output:
+
+```text
+u27/knowledge_readiness_manifest.json
+u27/KNOWLEDGE_READINESS_PACKET.md
+evals/proof_cases.json
+```
+
+### 4. Write The Handoff
 
 Use Handoff Engine when the agent needs a bounded work packet.
 
@@ -56,7 +72,7 @@ u27/HANDOFF_PACKET.md
 evals/proof_cases.json
 ```
 
-### 4. Run The Evals
+### 5. Run The Evals
 
 Use Eval Bench when acceptance checks need executable results.
 
@@ -72,7 +88,7 @@ u27/EVAL_REPORT.md
 u27/eval_evidence/*.txt
 ```
 
-### 5. Record The Proof
+### 6. Record The Proof
 
 Use Proof Ledger when evidence needs to survive the terminal session.
 
@@ -89,7 +105,7 @@ u27/PROOF_PACKET.md
 u27/evidence/run-0001.txt
 ```
 
-### 6. Check The Boundary
+### 7. Check The Boundary
 
 Use Boundary Engine when public language needs to stay inside recorded proof.
 
@@ -104,7 +120,7 @@ u27/BOUNDARY_REGISTER.md
 u27/boundary_report.json
 ```
 
-### 7. Check The Launch Surface
+### 8. Check The Launch Surface
 
 Use `u27-check` before the demo or launch link is shared.
 

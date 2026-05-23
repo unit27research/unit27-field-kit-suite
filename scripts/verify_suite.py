@@ -15,6 +15,7 @@ REQUIRED_FILES = [
 REQUIRED_TERMS = [
     "unit27-stack-engine",
     "unit27-context-engine",
+    "unit27-knowledge-readiness",
     "unit27-handoff-engine",
     "unit27-eval-bench",
     "unit27-proof-ledger",
@@ -22,9 +23,10 @@ REQUIRED_TERMS = [
     "u27-check",
     "U27-FKS01",
     "U27-S02-STACK-ENGINE",
+    "U27-S08-KNOWLEDGE-READINESS",
     "OPERATING_POSITION",
     "Numbering Doctrine",
-    "Stack Engine -> Context Engine -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check",
+    "Stack Engine -> Context Engine -> Knowledge Readiness -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check",
 ]
 
 
